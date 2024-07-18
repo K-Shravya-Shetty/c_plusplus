@@ -25,9 +25,17 @@ void pattern3(int n){
         cout<<endl;
     }
 }
-
+void pattern4(int n){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout<<i;
+        }
+        cout<<endl;
+    }
+}
 int main(){
     //pattern1(3);
     //pattern2(3);
     //pattern3(5);
+    //pattern4(3);
 }
