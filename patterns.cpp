@@ -55,5 +55,5 @@ int main(){
     //pattern3(5);
     //pattern4(3);
     //pattern5(4);
-    pattern6(4);
+    //pattern6(4);
 }
