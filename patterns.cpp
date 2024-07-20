@@ -49,6 +49,23 @@ void pattern6(int n){
         cout<<endl;
     }
 }
+void pattern7(int n){
+    for(int i=0;i<n;i++){
+        //for space on to the left side
+        for(int j=0;j<n-i-1;j++){
+            cout<<" ";
+        }
+        //for the stars ot the pattern
+        for(int j=0;j<2*i+1;j++){
+            cout<<"*";
+        }
+        //for space on to the right side
+        for(int j=0;j<n-i-1;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
 int main(){
     //pattern1(3);
     //pattern2(3);
@@ -56,4 +73,5 @@ int main(){
     //pattern4(3);
     //pattern5(4);
     //pattern6(4);
+    //pattern7(3);
 }
