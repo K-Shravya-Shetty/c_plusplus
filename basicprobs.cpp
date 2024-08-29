@@ -78,7 +78,39 @@ void check_prime(int num){
 //check the number is a armstrong number
 //armstrong number is a number that is equal to the sum of its digits raised to the power of the number of digits
 void armstrong_num(int num){
-
+    int cnum=num;
+    int sum=0;
+    while(num>0){
+        int ls=num%10;
+        num=num/10;
+        sum=sum+(ls*ls*ls);
+    }
+    if(cnum==sum){
+        cout<<"the number is an armstrong number";
+    }
+    else{
+        cout<<"the number is not an armstrong number";
+    }
+}
+//this is another way of checking if the number is prime or not by doing some mathematicl observations.
+//in this method we just loop till the square root of the number and find if its a prime number or not.
+void prime(int num){
+    int cnum=num;
+    int c=0;
+    for(int i=1;i*i<num;i++){
+        if(num%i==0){
+            c++;
+            if(num/i!=i){
+                c++;
+            }
+        }
+    }
+    if(c==2){
+        cout<<"the number "<<cnum<<" is prime";
+    }
+    else{
+        cout<<"the number "<<cnum<< "is not prime";
+    }
 }
 int main(){
     //extract(1267);
@@ -89,4 +121,7 @@ int main(){
     //swapnum(4,5);
     //check_prime(4);
     //check_prime(7);
+    //armstrong_num(35);
+    //prime(45);
+    //prime(101);
 }
