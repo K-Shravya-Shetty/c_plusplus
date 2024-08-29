@@ -139,6 +139,6 @@ int main(){
     //pattern6(4);
     //pattern7(3);
     //pattern8(3);
-    //pattern9(3);
-    //pattern10(3);
+    pattern9(3);
+    pattern10(3);
 }
