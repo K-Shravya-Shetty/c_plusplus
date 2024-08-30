@@ -60,6 +60,11 @@ int fun(int i){
     if(i==0) return 0;
 return i+fun(i-1) ;
 }
+int fact(int i){
+    if(i==0) return 0;
+    if(i==1) return 1;
+return i*fact(i-1);
+}
 int main()
 {
     int n;
@@ -71,6 +76,7 @@ int main()
     //backprintinc(n,n);
     //backprintdec(1,n);
     //printsum(n,0);
-    cout<<fun(n);
+    //cout<<fun(n);
+    cout<<fact(n);
     return 0;
 }
