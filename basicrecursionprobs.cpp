@@ -55,6 +55,11 @@ void printsum(int i,int sum){
     }
     printsum(i-1,sum+i);
 }
+//print the sum of first n numbers using the function method
+int fun(int i){
+    if(i==0) return 0;
+return i+fun(i-1) ;
+}
 int main()
 {
     int n;
@@ -65,6 +70,7 @@ int main()
     //printdec(n,n);
     //backprintinc(n,n);
     //backprintdec(1,n);
-    printsum(n,0);
+    //printsum(n,0);
+    cout<<fun(n);
     return 0;
 }
