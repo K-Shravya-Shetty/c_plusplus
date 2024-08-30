@@ -47,6 +47,14 @@ void backprintdec(int i,int n){
     backprintdec(i+1,n);
     cout<<i<<endl;
 }
+//print the sum of first n numbers using the parameter method
+void printsum(int i,int sum){
+    if(i<1){
+        cout<<sum;
+        return ;
+    }
+    printsum(i-1,sum+i);
+}
 int main()
 {
     int n;
@@ -56,6 +64,7 @@ int main()
     // printinc(1,n);
     //printdec(n,n);
     //backprintinc(n,n);
-    backprintdec(1,n);
+    //backprintdec(1,n);
+    printsum(n,0);
     return 0;
 }
