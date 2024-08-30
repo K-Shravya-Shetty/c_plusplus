@@ -11,24 +11,41 @@ void printName(int i, int n)
     cout << "hello world" << endl;
     printName(i + 1, n);
 }
-// print the numbers linearly from 1 to n using recursion
-void printlinerly(int i, int n)
+// print n numbers in the increasing order using recursion
+void printinc(int i, int n)
 {
     if (i > n)
     {
         return;
     }
     cout << i << endl;
-    printlinerly(i + 1, n);
+    printinc(i + 1, n);
 }
-void print(int i, int n)
+//print n numbers in the decreasing order sing recursion
+void printdec(int i, int n)
 {
     if (i < 1)
     {
         return;
     }
     cout << i<<endl;
-    print(i - 1, n);
+    printdec(i - 1, n);
+}
+//print n numbers in increasing order using backtracking method
+void backprintinc(int i,int n){
+    if(i<1){
+        return;
+    }
+    backprintinc(i-1,n);
+    cout<<i<<endl;
+}
+//print n numbers in decreasing order using backtracking method
+void backprintdec(int i,int n){
+    if(i>n){
+        return;
+    }
+    backprintdec(i+1,n);
+    cout<<i<<endl;
 }
 int main()
 {
@@ -36,7 +53,9 @@ int main()
     cout << "enter the value of n ";
     cin >> n;
     // printName(1, n);
-    // printlinerly(1,n);
-    print(n,n);
+    // printinc(1,n);
+    //printdec(n,n);
+    //backprintinc(n,n);
+    backprintdec(1,n);
     return 0;
 }
