@@ -11,11 +11,20 @@ void  printName(int i, int n)
     cout << "hello world"<<endl;
     printName(i + 1, n);
 }
+//print the numbers linearly from 1 to n using recursion
+void printlinerly(int i,int n){
+    if (i>n){
+        return;
+    }
+        cout<<i<<endl;
+        printlinerly(i+1,n);
+}
 int main()
 {
     int n;
     cout<<"enter the value of n ";
     cin >> n;
-    printName(1, n);
+    //printName(1, n);
+    printlinerly(1,n);
     return 0;
 }
