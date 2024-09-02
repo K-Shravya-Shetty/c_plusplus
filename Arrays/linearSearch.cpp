@@ -16,5 +16,8 @@ int main(){
     for(int i=0;i<n;i++){ 
         cin>>arr[i];
     }
+    int d;
+    cout<<"enter the value of d: ";
+    cin>>d;
     linearSearch(arr,n,d);
 }

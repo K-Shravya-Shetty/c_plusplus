@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 void largestelem(int arr[],int n){
     int largest=0;
     for(int i=0;i<n;i++){
@@ -31,10 +29,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    // int d;
-    // cout<<"enter the value of d: ";
-    // cin>>d;
-    //secondLargest(arr,n);
-    //largestelem(arr,n);
+    secondLargest(arr,n);
+    largestelem(arr,n);
     return 0;
 }
