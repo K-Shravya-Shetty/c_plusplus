@@ -80,7 +80,7 @@ int fact(int i)
 }
 
 int main()
-{   
+{
     // printName(1, n);
     // printinc(1,n);
     // printdec(n,n);
