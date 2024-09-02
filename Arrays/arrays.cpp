@@ -1,27 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-void left1bitrotate(int arr[],int n){
-    int temp=arr[0];
-    for(int i=1;i<n;i++){
-        arr[i-1]=arr[i];
-    }
-    arr[n-1]=temp;
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-}
-void leftRotate(int arr[],int n,int d){
-    reverse(arr,arr+d);
-    reverse(arr+d,arr+n);
-    reverse(arr,arr+n);
-}
-void linearSearch(int arr[],int n,int d){
-    for(int i=0;i<n;i++){
-        if(arr[i]==d){
-            cout<<"the number is found at the index "<<i;
-        }
-    }
-}
+
+
 void largestelem(int arr[],int n){
     int largest=0;
     for(int i=0;i<n;i++){
@@ -56,12 +36,5 @@ int main(){
     // cin>>d;
     //secondLargest(arr,n);
     //largestelem(arr,n);
-    //linearSearch(arr,n,d);
-    left1bitrotate(arr,n);
-    // leftRotate(arr,n,d);
-    // cout<<"array after the left shift ";
-    // for(int i=0;i<n;i++){
-    //     cout<<arr[i]<<" ";
-    // }
     return 0;
 }
