@@ -8,3 +8,6 @@
 <h3>Find the largest element</h3>
 <p>The problem is to find the largest number in the array and the follow up problem is to find the second largest element in the array</p>
 <hr>
+<h3>Move the zeros </h3>
+<p> the problem is to move the \zeros to the end of the array</p>
+<hr>
