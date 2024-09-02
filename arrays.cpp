@@ -21,6 +21,17 @@ void largestelem(int arr[],int n){
     }
     cout<<"the largest element is "<<largest;
 }
+void secondLargest(int arr[],int n){
+    int largest=0;
+    int slargest=-1;
+    for(int i=0;i<n;i++){
+        if(arr[i]>largest){
+            slargest=largest;
+            largest=arr[i];
+        }
+    }
+    cout<<"second largest element is "<<slargest;
+}
 int main(){
     int n;
     cout<<"enter the value of n : ";
@@ -33,7 +44,8 @@ int main(){
     // int d;
     // cout<<"enter the value of d: ";
     // cin>>d;
-    largestelem(arr,n);
+    secondLargest(arr,n);
+    //largestelem(arr,n);
     //linearSearch(arr,n,d);
     // leftRotate(arr,n,d);
     // cout<<"array after the left shift ";
