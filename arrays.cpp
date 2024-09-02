@@ -12,6 +12,15 @@ void linearSearch(int arr[],int n,int d){
         }
     }
 }
+void largestelem(int arr[],int n){
+    int largest=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+        }
+    }
+    cout<<"the largest element is "<<largest;
+}
 int main(){
     int n;
     cout<<"enter the value of n : ";
@@ -21,10 +30,11 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int d;
-    cout<<"enter the value of d: ";
-    cin>>d;
-    linearSearch(arr,n,d);
+    // int d;
+    // cout<<"enter the value of d: ";
+    // cin>>d;
+    largestelem(arr,n);
+    //linearSearch(arr,n,d);
     // leftRotate(arr,n,d);
     // cout<<"array after the left shift ";
     // for(int i=0;i<n;i++){
