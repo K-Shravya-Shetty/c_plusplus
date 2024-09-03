@@ -11,3 +11,6 @@
 <h3>Move the zeros </h3>
 <p> the problem is to move the \zeros to the end of the array</p>
 <hr>
+<h3>Union of the arrays</h3>
+<p>The problem is the find the union of the given two arrays and stire the union array separately in another array</p>
+<hr>
