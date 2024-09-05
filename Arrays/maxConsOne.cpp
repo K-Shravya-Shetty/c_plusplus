@@ -6,14 +6,11 @@ int maxOnes(int arr[],int n){
     int cnt=0;
     for(int i=0;i<n;i++){
         if(arr[i]==1){
-            maxi++;
             cnt++;
+            maxi=max(maxi,cnt);
         }
-        if(arr[i]==0){
+        else{
             cnt=0;
-        }
-        if(cnt>maxi){
-            maxi=cnt;
         }
     }
     return maxi;
