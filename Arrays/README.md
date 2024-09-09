@@ -16,3 +16,7 @@
 <hr>
 <h3>Two Sum problem</h3>
 <p>The problem is to find the 2 numbers in the given array that add up to the given target number.There are two ways in which this problem may be asked they may say to return true or false. The other way is they may say to retrun the index of the two numbers.</p>
+<hr>
+<h3>Appearence of a number</h3>
+ <p>The problem is to find if the number has appeared more than once in the arrauy</p>
+<hr>
